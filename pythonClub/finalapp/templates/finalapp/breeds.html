@@ -1,0 +1,21 @@
+{% extends 'base2.html' %}
+{% block content %}
+<h1>Breeds</h1>
+<table class='table'>
+ <tr>
+     <th>Name</th>
+     <th>Description</th>
+ </tr>
+ {% for t in breed_list %}
+   <tr>
+       <td>{{ t.breedname }}</td>
+       <td>{{ t.breeddescription }}</td>
+   </tr>
+
+ {% endfor %}
+
+
+</table>
+
+
+{% endblock %}

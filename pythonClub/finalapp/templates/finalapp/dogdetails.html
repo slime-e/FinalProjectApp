@@ -1,0 +1,13 @@
+{% extends 'base2.html' %}
+
+{% block content %}
+<h2>{{ woof.dogname }}</h2>
+<p>Breed: {{ woof.dogbreed }} </p>
+<p>Added by: {{ woof.user }}</p>
+<p>Entry Date: {{ woof.dogentrydate }}</p>
+<p>URL: {{ woof.dogurl }}</p>
+<p>Lore: {{ woof.dogdescription }}</p>
+<p>Value: {{ woof.dogvalue }}</p>
+<p>No. Of Reviews: {{ reviews }}</p>
+
+{% endblock %}
